@@ -98,7 +98,7 @@
             <NuxtLink
               target="_blank"
               rel="noopener noreferrer"
-              to="https://pinegrow.com/vue-designer"
+              to="https://vuedesigner.com"
               class="bg-gray-100 dark:bg-white/10 rounded font-mono p-1 font-bold"
               >Try Now</NuxtLink
             >
