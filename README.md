@@ -82,6 +82,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ### Modules/Plugins
 
 - [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
+- [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
 
 ### Devtools
 
