@@ -30,8 +30,13 @@
         'Nuxt is open source and the code is available on GitHub, feel free to star it, participate in discussions or dive into the source.',
     },
   })
+
+  const welcomeTitle = computed(() => {
+    return props.title
+  })
+
   useHead({
-    title: `${props.title}`,
+    title: `${welcomeTitle.value}`,
     script: [],
     style: [
       {
