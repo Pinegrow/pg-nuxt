@@ -77,7 +77,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ### Icons
 
-- [Nuxt Icon](https://github.com/nuxt-modules/icon) - use over 100,000 open-source [Iconify](https://iconify.design/) icons. Uses the **iconify** format for icon names, for example, `mdi:home`.
+- [UnoCSS Preset Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons/) - use over 100,000 open-source [Iconify](https://iconify.design/) icons. Uses the **unocss** format for icon names, for example, `i-mdi-home`.
 
 ### Modules/Plugins
 

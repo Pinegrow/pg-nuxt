@@ -1,4 +1,5 @@
 // import { fileURLToPath, URL } from 'node:url'
+import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -12,10 +13,10 @@ export default defineNuxtConfig({
       baseURL: '/',
     },
   },
-  modules: ['@pinegrow/nuxt-module', 'nuxt-icon', '@nuxt/devtools'],
+  modules: ['@pinegrow/nuxt-module', '@unocss/nuxt', '@nuxt/devtools'],
   pinegrow: {
     liveDesigner: {
-      iconPreferredCase: 'iconify', // nuxt-icon uses iconfiy format for icon names
+      iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names names
       devtoolsKey: 'devtools', // see plugins/devtools.client.ts
       // plugins: [
       //   {
@@ -27,5 +28,12 @@ export default defineNuxtConfig({
       //   },
       // ],
     },
+  },
+  unocss: {
+    presets: [
+      presetIcons({
+        prefix: 'i-', // default prefix, do not change
+      }),
+    ],
   },
 })
