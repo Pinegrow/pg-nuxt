@@ -38,7 +38,9 @@
         exist on this site.
       </div>
       <pre v-if="isDev">{{ error }}</pre>
-      <BaseButton label="< Go Back" size="lg" @click="handleError"></BaseButton>
+      <button label="< Go Back" size="lg" @click="handleError">
+        &lt; Go Back
+      </button>
     </div>
   </NuxtLayout>
 </template>

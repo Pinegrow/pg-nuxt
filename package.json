@@ -22,7 +22,7 @@
     "@iconify/json": "^2.2.96",
     "@nuxt/devtools": "^0.7.1",
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/nuxt-module": "^3.0.0",
+    "@pinegrow/nuxt-module": "^3.0.4",
     "@types/node": "^18",
     "@unocss/nuxt": "^0.54.1",
     "@unocss/preset-icons": "^0.54.1",
