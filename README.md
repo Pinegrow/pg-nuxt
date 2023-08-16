@@ -70,6 +70,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 - [Nuxt](https://nuxt.com/) - The Intuitive Vue Framework
   - 👉 Follow the Nuxt docs for the amazing list of [features](https://nuxt.com/docs/getting-started/introduction).
+  - 🚦 [Nuxt-Router](https://nuxt.com/docs/getting-started/routing), based on the official [Vue-Router](https://vuejs.org/guide/introduction.html) and enables file-based routing.
+  - SSR friendly `useState` composable to share state across components.
 
 ### UI Frameworks
 
@@ -83,6 +85,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 - [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
 - [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
+- 🍍 [Pinia](https://pinia.vuejs.org/ssr/nuxt.html) stores for global state management via the `@pinia/nuxt module`. Its light-weight, type-safe, extensible, modular with vue-devtools support.
 
 ### Devtools
 

@@ -13,7 +13,12 @@ export default defineNuxtConfig({
       baseURL: '/',
     },
   },
-  modules: ['@pinegrow/nuxt-module', '@unocss/nuxt', '@nuxt/devtools'],
+  modules: [
+    '@pinegrow/nuxt-module',
+    '@unocss/nuxt',
+    '@nuxt/devtools',
+    '@nuxtjs/html-validator',
+  ],
   pinegrow: {
     liveDesigner: {
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names names
