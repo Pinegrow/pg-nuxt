@@ -1,5 +1,5 @@
 <script lang="ts" setup></script>
 <template>
-  <TheWelcome />
+  <div>A Fresh Start!</div>
 </template>
 <style scoped></style>
