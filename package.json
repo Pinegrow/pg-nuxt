@@ -8,10 +8,11 @@
   },
   "scripts": {
     "dev": "nuxt dev",
+    "now": "npm run build && npm run preview",
+    "lighthouse": "npx unlighthouse --site https://pg-nuxt-css.netlify.app",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "now": "npm run build && npm run preview",
     "postinstall": "nuxt prepare",
     "vue-devtools": "vue-devtools",
     "lint": "npm run lint:fix && npm run format",

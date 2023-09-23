@@ -58,6 +58,12 @@ npm run dev
 npm run now # build & preview
 ```
 
+### Lighthouse
+
+```bash
+npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to run lighthouse on entire site (all pages)
+```
+
 ### Build
 
 ```bash
@@ -95,7 +101,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 - [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
 - [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
-- 🍍 [Pinia](https://pinia.vuejs.org/ssr/nuxt.html) stores for global state management via the `@pinia/nuxt module`. Its light-weight, type-safe, extensible, modular with vue-devtools support.
 
 ### Devtools
 

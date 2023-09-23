@@ -3,23 +3,23 @@ import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
   // ssr: false,
-  runtimeConfig: {
-    public: {
-      title: `Vue Designer`,
-      description: 'Vue Designer Nuxt with CSS - Quick start template',
-      author: 'Pinegrow',
-      nav: [{ text: 'Home', link: '/' }],
-    },
-    app: {
-      baseURL: '/',
+  devtools: { enabled: false }, // Disable when using Vue devtools
+
+  // Look into MetaTags.vue for other flavours
+  app: {
+    baseURL: '/',
+    head: {
+      meta: [{ charset: 'utf-8' }],
     },
   },
+
   modules: [
     '@pinegrow/nuxt-module',
     '@unocss/nuxt',
-    // '@nuxt/devtools',
+    '@nuxt/devtools',
     '@nuxtjs/html-validator',
   ],
+
   pinegrow: {
     liveDesigner: {
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names names
@@ -35,11 +35,17 @@ export default defineNuxtConfig({
       // ],
     },
   },
+
   unocss: {
     presets: [
       presetIcons({
         prefix: 'i-', // default prefix, do not change
       }),
     ],
+  },
+
+  sourcemap: {
+    client: false,
+    server: false,
   },
 })
