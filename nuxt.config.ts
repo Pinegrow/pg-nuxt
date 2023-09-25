@@ -17,7 +17,12 @@ export default defineNuxtConfig({
     '@pinegrow/nuxt-module',
     '@unocss/nuxt',
     '@nuxt/devtools',
-    '@nuxtjs/html-validator',
+    '@nuxt/content',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    // '@nuxtjs/html-validator',
+    '@nuxt/image',
+    '@vee-validate/nuxt',
   ],
 
   pinegrow: {
@@ -36,12 +41,95 @@ export default defineNuxtConfig({
     },
   },
 
+  css: ['~/assets/css/main.css', 'lite-youtube-embed/src/lite-yt-embed.css'],
+
+  image: {
+    // sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw', // Not yet supported - https://github.com/nuxt/image/issues/216
+    // densities: [1,2], // default
+    quality: 80, // can be overridden as NuxtImg prop
+    format: ['webp'], // default
+    // The screen sizes predefined by `@nuxt/image`:
+    // screens: {
+    //   xs: 320,
+    //   sm: 640,
+    //   md: 768,
+    //   lg: 1024,
+    //   xl: 1280,
+    //   xxl: 1536,
+    //   '2xl': 1536,
+    // },
+    presets: {
+      avatar: {
+        modifiers: {
+          format: 'webp',
+          width: 80,
+          height: 80,
+        },
+      },
+    },
+    domains: ['images.unsplash.com', 'fakestoreapi.com', 'res.cloudinary.com'],
+    alias: {
+      unsplash: 'https://images.unsplash.com',
+    },
+  },
+
+  veeValidate: {
+    // disable or enable auto imports
+    autoImports: true,
+    // Use different names for components
+    componentNames: {
+      Form: 'VeeForm',
+      Field: 'VeeField',
+      FieldArray: 'VeeFieldArray',
+      ErrorMessage: 'VeeErrorMessage',
+    },
+  },
+
+  content: {
+    markdown: {
+      anchorLinks: false,
+      rehypePlugins: [
+        [
+          'rehype-external-links',
+          {
+            target: '_blank',
+            rel: ['noopener'],
+            test: (node: any) => /^https?:\/\//.test(node.properties.href),
+          },
+        ],
+      ],
+    },
+    highlight: {
+      theme: 'dracula-soft',
+    },
+  },
+
   unocss: {
     presets: [
       presetIcons({
         prefix: 'i-', // default prefix, do not change
       }),
     ],
+  },
+
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      'defineStore', // import { defineStore } from 'pinia'
+      ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
+      'storeToRefs',
+      'acceptHMRUpdate',
+    ],
+  },
+
+  imports: {
+    dirs: ['stores'],
+  },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === 'lite-youtube',
+    },
   },
 
   sourcemap: {
