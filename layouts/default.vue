@@ -2,6 +2,7 @@
 
 <template>
   <div>
+    <MetaTags />
     <slot />
   </div>
 </template>
