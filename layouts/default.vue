@@ -1,10 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  //...
+</script>
 
 <template>
-  <div>
-    <MetaTags />
+  <main>
     <slot />
-  </div>
+  </main>
 </template>
 
 <style scoped></style>
