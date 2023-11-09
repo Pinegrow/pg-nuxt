@@ -14,6 +14,16 @@ const {
 } = site
 
 export default defineNuxtConfig({
+  extends: [
+    './my-nuxt-layer', // NavBar and Footer components
+  ],
+  components: [
+    {
+      path: '~/components/OgImage',
+      island: true,
+    },
+    '~/components',
+  ],
   // ssr: false,
   devtools: { enabled: false }, // Disable when using Vue devtools
 
@@ -227,6 +237,14 @@ export default defineNuxtConfig({
         prefix: 'i-', // default prefix, do not change
       }),
     ],
+    content: {
+      pipeline: {
+        include: [
+          './*.{js,cjs,ts,cts,mts}', // site.ts
+          '*/**/*.{js,cjs,ts,cts,mts}',
+        ],
+      },
+    },
   },
 
   pinegrow: {
