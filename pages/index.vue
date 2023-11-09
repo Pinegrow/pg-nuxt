@@ -35,7 +35,6 @@
   const heroImage = heroImageOptimized.src
   const bgStyles = heroImageOptimized.bgStyles
 </script>
-
 <template>
   <TheWelcome />
 </template>
