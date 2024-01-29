@@ -235,7 +235,7 @@ export default defineNuxtConfig({
   pinegrow: {
     liveDesigner: {
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names names
-      devtoolsKey: 'devtools', // see plugins/devtools.client.ts
+      devtoolsKey: 'devtoolsKey', // see plugins/devtools.client.ts
       // plugins: [
       //   {
       //     name: 'My Awesome Lib 3.0',
