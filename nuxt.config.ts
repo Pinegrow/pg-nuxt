@@ -15,10 +15,14 @@ const {
 
 export default defineNuxtConfig({
   extends: [
-    './my-nuxt-layer', // NavBar and Footer components
+    './app-nuxt-layer', // NavBar and Footer components
   ],
   // ssr: false,
   devtools: { enabled: false }, // Disable when using Vue devtools
+
+  // Preparation for Nuxt 4 migration
+  srcDir: 'app',
+  serverDir: 'server',
 
   experimental: {
     componentIslands: true,
@@ -62,7 +66,7 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/main.css', // Used for global styles.
+    '@/assets/css/main.css', // Used for global styles.
     'lite-youtube-embed/src/lite-yt-embed.css',
   ],
 
@@ -241,7 +245,7 @@ export default defineNuxtConfig({
       //     name: 'My Awesome Lib 3.0',
       //     key: 'my-awesome-lib',
       //     pluginPath: fileURLToPath(
-      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //       new URL('./web-types/my-awesome-lib.json', import.meta.url),
       //     ),
       //   },
       // ],
