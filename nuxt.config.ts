@@ -20,6 +20,10 @@ export default defineNuxtConfig({
   // ssr: false,
   devtools: { enabled: false }, // Disable when using Vue devtools
 
+  // Preparation for Nuxt 4 migration
+  srcDir: 'app',
+  serverDir: 'server',
+
   experimental: {
     componentIslands: true,
   },
