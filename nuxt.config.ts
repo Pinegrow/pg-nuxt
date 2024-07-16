@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 import { resolve } from 'pathe'
 import presetIcons from '@unocss/preset-icons'
+import { bundledLanguages } from 'shiki'
 
 import site from './site'
 const {
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
     './app-nuxt-layer', // NavBar and Footer components
   ],
   // ssr: false,
-  devtools: { enabled: false }, // Disable when using Vue devtools
+  // devtools: { enabled: false }, // enabled by default, disable when using standalone Vue devtools
 
   // Preparation for Nuxt 4 migration
   future: {
@@ -49,7 +50,6 @@ export default defineNuxtConfig({
   modules: [
     '@pinegrow/nuxt-module',
     '@unocss/nuxt',
-    '@nuxt/devtools',
     '@nuxt/content',
     '@vueuse/nuxt',
     '@pinia/nuxt',
@@ -107,9 +107,9 @@ export default defineNuxtConfig({
         },
       },
     },
-    netlify: {
-      baseURL: url,
-    },
+    // netlify: {
+    //   baseURL: url,
+    // },
     domains: [
       'images.unsplash.com',
       'fakestoreapi.com',
@@ -157,23 +157,8 @@ export default defineNuxtConfig({
       ],
     },
     highlight: {
-      langs: [
-        'js',
-        'jsx',
-        'json',
-        'ts',
-        'tsx',
-        'vue',
-        'css',
-        'html',
-        'vue',
-        'shell',
-        'bash',
-        'md',
-        'mdc',
-        'yaml',
-        'diff',
-      ],
+      //@ts-ignore
+      langs: Object.keys(bundledLanguages),
       theme: 'dracula-soft',
     },
   },
