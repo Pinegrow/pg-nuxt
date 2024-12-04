@@ -1,0 +1,118 @@
+{
+  "files": {
+    "pages/index.vue": {
+      "frameworks": [
+        "pg.insight.events",
+        "@nuxt/image",
+        "pg.vue.tree.painter",
+        "@vue/devtools",
+        "pg.css.grid",
+        "@nuxt/devtools",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "@unocss/preset-icons",
+        "project",
+        "pg.project.items",
+        "pg.asset.manager",
+        "@pinegrow/nuxt-module",
+        "app_designer",
+        "vue",
+        "nuxt",
+        "pg.html"
+      ]
+    },
+    "components/TheWelcome.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "pg.insight.events",
+        "@vue/devtools",
+        "pg.vue.tree.painter",
+        "@nuxt/devtools",
+        "@unocss/preset-icons",
+        "pg.css.grid",
+        "@pinegrow/nuxt-module",
+        "project",
+        "pg.image.overlay",
+        "nuxt",
+        "pg.code-validator",
+        "vue",
+        "pg.project.items",
+        "app_designer",
+        "pg.asset.manager",
+        "pg.html"
+      ]
+    },
+    "app/pages/index.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "@vue/devtools",
+        "@nuxt/devtools",
+        "@unocss/preset-icons",
+        "@pinegrow/nuxt-module",
+        "nuxt",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "pg.html"
+      ]
+    },
+    "app/components/TheWelcome.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "@vue/devtools",
+        "@nuxt/devtools",
+        "@unocss/preset-icons",
+        "@pinegrow/nuxt-module",
+        "nuxt",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "pg.html"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["app/pages/index.vue", "app/components/TheWelcome.vue"],
+  "breakpoints": ["640px", "768px", "1024px"],
+  "frameworks": [
+    "@nuxt/image",
+    "@vue/devtools",
+    "@nuxt/devtools",
+    "@unocss/preset-icons",
+    "@pinegrow/nuxt-module",
+    "nuxt",
+    "vue",
+    "app_designer",
+    "project",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "pg.html"
+  ],
+  "urls": {
+    "pages/index.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "components/TheWelcome.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "app/pages/index.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "app/components/TheWelcome.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    }
+  }
+}
